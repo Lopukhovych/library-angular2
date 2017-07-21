@@ -1,0 +1,13 @@
+<div class="row">
+  <div class="col-xs-12">
+    <div class="dropdown-toggle col-xs-12 col-sm-10" appDropdown>
+      <a
+              class="list-group-item clearfix"
+              style="cursor: pointer; text-align: center"
+              [routerLink]="['/genres',genre.genreName]"
+              routerLinkActive="active"
+      >
+        {{genre.genreName}}</a>
+    </div>
+  </div>
+</div>

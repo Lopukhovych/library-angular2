@@ -1,0 +1,14 @@
+<div class="col-xs-12 author-info">
+  <h3>{{author.authorName}}</h3>
+  <p style="cursor: pointer">{{author.biography}}</p>
+  <a
+          *ngFor="let item of author.bookList"
+          [routerLink]="['/books',item]"
+          style="cursor: pointer;"
+          class="list-group-item clearfix"
+  >
+    {{item}}
+  </a>
+
+
+</div>

@@ -1,0 +1,14 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a [routerLink]="['/']" class="navbar-brand">Библиотека</a>
+    </div>
+    <div class="navbar-default">
+      <ul class="nav navbar-nav">
+        <li routerLinkActive="active"><a [routerLink]="['/books']">Список книг</a></li>
+        <li routerLinkActive="active"><a [routerLink]="['/authors']" >Список авторов</a></li>
+        <li routerLinkActive="active"><a [routerLink]="['/genres']" >Жанры</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>

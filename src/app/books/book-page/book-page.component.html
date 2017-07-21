@@ -1,0 +1,16 @@
+<div class="col-xs-12 book-info">
+  <h3>{{this.bookItem.bookName}}</h3>
+  <p *ngFor="let item of this.bookItem.author">
+    <a
+            style="cursor: pointer"
+            [routerLink]="['/authors',item]"
+    >{{ item }}</a><br>
+  </p>
+  <p>
+    <a
+            style="cursor: pointer"
+            [routerLink]="['/genres',this.bookItem.genre]"
+    >{{ this.bookItem.genre }}</a>
+  </p>
+  <p>{{ this.bookItem.description }}</p>
+</div>

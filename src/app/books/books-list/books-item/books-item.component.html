@@ -1,0 +1,16 @@
+<div class="row ">
+         <div class="col-xs-12 col-md-6" style="text-align: center">
+                <a
+                        class="clearfix"
+                        style="cursor: pointer"
+                        [routerLink]="['/books',bookItem.bookName]"
+                >{{bookItem.bookName}}</a>
+         </div>
+        <div class="col-xs-12 col-md-6" style="text-align: center">
+                <a
+                        *ngFor="let author of bookItem.author"
+                        style="cursor: pointer;"
+                        [routerLink]="['/authors',author]"
+                >{{ author }}</a>
+        </div>
+</div>

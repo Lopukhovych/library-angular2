@@ -1,0 +1,11 @@
+<div class="row">
+  <div class="col-xs-12">
+    <ul class="list-group">
+      <app-books-item
+              class="list-group-item"
+              *ngFor="let item of bookItems"
+              [bookItem] = item
+      ></app-books-item>
+    </ul>
+  </div>
+</div>
