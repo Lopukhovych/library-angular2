@@ -16,7 +16,7 @@ export class BooksListComponent implements OnInit {
   }
 
   ngOnInit() {
-    //через ajax запрос получаем перечень книг и выводим их
+    //via ajax request get list of books and show it
     this.bookService.getBookItems().subscribe((data:Response)=>{this.bookItems = data.json().books});
   }
 }
